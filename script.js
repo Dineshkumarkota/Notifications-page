@@ -20,4 +20,14 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     updateCounter();
   });
+   const privateMsgNotification = document.querySelector('.private-msg');
+  if (privateMsgNotification) {
+    privateMsgNotification.addEventListener('click', () => {
+      const privateMsgText = privateMsgNotification.querySelector('.notification-text-private-message');
+      if (privateMsgText) {
+        privateMsgText.classList.add('show'); // make it visible
+      }
+    });
+  }
 });
+
